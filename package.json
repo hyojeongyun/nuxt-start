@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "scripts": {
+        "build-prod": "set PHASE=production&& nuxi build",
+        "build-dev": "set PHASE=development&& nuxi build",
+        "dev": "set PHASE=local&& nuxi dev",
+        "generate": "nuxi generate",
+        "preview": "nuxi preview",
+        "test": "vitest"
+    },
+    "devDependencies": {
+        "nuxt": "3.0.0-rc.1"
+    },
+    "dependencies": {
+        "@nuxt/test-utils-edge": "3.0.0-rc.3-27540667.2886dfd",
+        "@nuxtjs/eslint-config-typescript": "^10.0.0",
+        "@pinia/nuxt": "^0.1.9",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "pinia": "^2.0.14",
+        "pnpm": "^7.0.1",
+        "prettier": "^2.6.2",
+        "vitest": "^0.12.6"
+    }
+}
