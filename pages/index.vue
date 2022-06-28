@@ -1,10 +1,3 @@
-<script setup lang="ts">
-useHead({
-    title: "My App",
-    charset: "utf-8",
-    meta: [{ name: "description", content: "My amazing site." }],
-});
-</script>
 <template>
     <div>
         <img src="~/assets/logo.svg" />

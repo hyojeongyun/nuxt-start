@@ -1,5 +1,11 @@
 <!-- default layout -->
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+    title: "My App",
+    charset: "utf-8",
+    meta: [{ name: "description", content: "My amazing site." }],
+});
+</script>
 <template>
     <div>
         <nav>
