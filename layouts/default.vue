@@ -1,5 +1,6 @@
 <!-- default layout -->
 <script setup lang="ts">
+import TheFooter from "~~/components/TheFooter.vue";
 useHead({
     title: "My App",
     charset: "utf-8",
@@ -30,6 +31,9 @@ useHead({
         <main>
             <Nuxt-Page />
         </main>
+        <div>
+            <TheFooter />
+        </div>
     </div>
 </template>
 <style>
@@ -50,6 +54,7 @@ a.nuxt-link-exact-active {
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     margin: 0;
+    height: 100%;
 }
 
 main {
