@@ -18,6 +18,9 @@ useHead({
                     <NuxtLink to="/about">About</NuxtLink>
                 </li>
                 <li>
+                    <NuxtLink to="/map">Map</NuxtLink>
+                </li>
+                <li>
                     <NuxtLink to="/mountain">Mountains</NuxtLink>
                 </li>
                 <li>
