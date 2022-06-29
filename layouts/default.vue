@@ -40,8 +40,11 @@ useHead({
     </div>
 </template>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 :root {
     --primary-color: #00c58e;
+    font-family: 'Jua', serif;
 }
 
 /* home route and active route will show in bold as it matches / and /about */

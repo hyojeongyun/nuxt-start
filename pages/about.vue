@@ -1,7 +1,7 @@
 <script setup>
 const posts = [
-    { id: 1, title: "my journey" },
-    { id: 2, title: "nuxt" },
+    { id: 1, title: "Vue" },
+    { id: 2, title: "Nuxt" },
 ];
 const counter = useState("counter", () => Math.round(Math.random() * 1000));
 const sameCounter = useState("counter");
@@ -16,6 +16,7 @@ const sameCounter = useState("counter");
         </div>
         <br />
         <div>
+            <h3>COUNTER</h3>
             <div>{{ counter }}</div>
             <div>{{ sameCounter }}</div>
             <br />

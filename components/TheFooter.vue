@@ -1,10 +1,10 @@
 <template>
-    <p>hello</p>
+    <p>Hello 😊</p>
 </template>
 <style scoped>
 p {
     text-align: center;
-    color: #00c58e;
+    color: #148162;
 }
 
 body {

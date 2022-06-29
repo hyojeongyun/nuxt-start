@@ -18,6 +18,9 @@ export default {
 </template>
 
 <style scoped>
+button {
+    font-family: 'Jua', sans-serif;
+}
 img {
     height: 100px;
 }
