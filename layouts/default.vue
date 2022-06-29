@@ -1,11 +1,21 @@
 <!-- default layout -->
-<script setup lang="ts">
+<script>
 import TheFooter from "~~/components/TheFooter.vue";
-useHead({
-    title: "My App",
-    charset: "utf-8",
-    meta: [{ name: "description", content: "My amazing site." }],
-});
+
+export default {
+    setup() {
+        useHead({
+            title: "My App",
+            charset: "utf-8",
+            meta: [{ name: "description", content: "My amazing site." }],
+        });
+    },
+    data() {
+        return {
+            show: false,
+        };
+    },
+};
 </script>
 <template>
     <div>
@@ -30,6 +40,9 @@ useHead({
         </nav>
         <main>
             <Nuxt-Page />
+            <LazyMountainList v-if="show" />
+            <button v-if="!show" @click="show = true">Show List</button>
+            <button v-if="show" @click="show = false">Close List</button>
         </main>
         <div>
             <TheFooter />
