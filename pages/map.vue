@@ -60,7 +60,7 @@ export default {
 <style>
 div {
     margin: 0px auto;
-    font-family: 'Jua', sans-serif;
+    font-family: "Jua", sans-serif;
 }
 .label {
     display: block;
@@ -71,7 +71,7 @@ div {
     line-height: 22px;
     border-radius: 4px;
     padding: 0px 10px;
-    font-family: 'Jua', serif;
+    font-family: "Jua", serif;
 }
 img {
     height: 100px;

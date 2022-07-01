@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 button {
-    font-family: 'Jua', sans-serif;
+    font-family: "Jua", sans-serif;
 }
 img {
     height: 100px;

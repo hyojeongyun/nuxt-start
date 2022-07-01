@@ -40,11 +40,11 @@ useHead({
     </div>
 </template>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
 :root {
     --primary-color: #00c58e;
-    font-family: 'Jua', serif;
+    font-family: "Jua", serif;
 }
 
 /* home route and active route will show in bold as it matches / and /about */
@@ -55,12 +55,6 @@ a.nuxt-link-active {
 /* exact link will show the primary color for only the exact matching link */
 a.nuxt-link-exact-active {
     color: #00c58e;
-}
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    margin: 0;
-    height: 100%;
 }
 
 main {
