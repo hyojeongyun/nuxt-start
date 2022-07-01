@@ -1,9 +1,13 @@
 <script setup>
-import { reactive } from "vue";
+import { reactive, computed } from "vue";
+
+// about
 const posts = [
     { id: 1, title: "Vue" },
     { id: 2, title: "Nuxt" },
 ];
+
+// counter
 const counter = useState("counter", () => Math.round(Math.random() * 1000));
 const sameCounter = useState("counter");
 
@@ -12,6 +16,7 @@ const dateAndTime = reactive({
     timeString: new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds(),
 });
 
+// date and time
 function setDateAndTime() {
     dateAndTime.dateString = new Date().getFullYear() + "." + (new Date().getMonth() + 1) + "." + new Date().getDate();
     dateAndTime.timeString = new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds();
@@ -45,6 +50,16 @@ const loading = setInterval(() => {
                 <strong>Time: </strong><span>{{ dateAndTime.timeString }}</span>
             </p>
         </div>
+        <br />
+        <div>
+            <h3>ADD</h3>
+            <input v-model="data1" type="text" />
+            <span> + </span>
+            <input v-model="data2" type="text" />
+            <span> = </span>
+            <span v-if="parseInt(data1) >= 0 && parseInt(data2) >= 0">{{ parseInt(data1) + parseInt(data2) }}</span>
+        </div>
+        <br />
     </div>
 </template>
 
@@ -54,5 +69,8 @@ img {
 }
 h1 {
     text-align: center;
+}
+input {
+    width: 50px;
 }
 </style>
