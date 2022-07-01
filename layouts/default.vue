@@ -93,7 +93,7 @@ a:visited {
 }
 
 a:hover {
-    color: #00c58e;
+    color: #000000;
 }
 
 button,

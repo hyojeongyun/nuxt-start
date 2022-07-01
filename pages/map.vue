@@ -25,8 +25,8 @@ export default {
             };
             const map = new kakao.maps.Map(container, options);
             this.map = map;
-            const content = '<div class ="label"><span class="left"></span><span class="center">농심 도연관</span><span class="right"></span></div>';
-
+            const content =
+                '<div class ="label"><span class="left"></span><span class="center"><a href="https://nds.nongshim.co.kr/main.do" target="_blank">농심 도연관</a></span><span class="right"></span></div>';
             const position = new kakao.maps.LatLng(37.49644445091002, 126.9201342484267);
 
             const customOverlay = new kakao.maps.CustomOverlay({
