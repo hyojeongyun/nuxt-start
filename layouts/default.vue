@@ -29,6 +29,9 @@ useHead({
                 <li>
                     <NuxtLink to="/planet">Planets</NuxtLink>
                 </li>
+                <li>
+                    <NuxtLink to="/container">Container</NuxtLink>
+                </li>
             </ul>
         </nav>
         <main>
