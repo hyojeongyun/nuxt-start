@@ -32,10 +32,14 @@ let add1, add2, sub1, sub2, mul1, mul2, div1, div2;
     <div>
         <img src="~/assets/logo.svg" />
         <h1>About</h1>
+
+        <!-- post -->
         <div v-for="post in posts" :key="post.title">
             <p>{{ post.title }}</p>
         </div>
         <br />
+
+        <!-- 카운터 -->
         <div>
             <h3>COUNTER</h3>
             <div>{{ counter }}</div>
@@ -45,6 +49,8 @@ let add1, add2, sub1, sub2, mul1, mul2, div1, div2;
             <button @click="counter--">-</button>
         </div>
         <br />
+
+        <!-- 날짜, 시간 -->
         <div>
             <p>
                 <strong>Date: </strong><span>{{ dateAndTime.dateString }}</span> <br />
@@ -52,6 +58,8 @@ let add1, add2, sub1, sub2, mul1, mul2, div1, div2;
             </p>
         </div>
         <br />
+
+        <!-- 계산 -->
         <div>
             <h3>ADD</h3>
             <input v-model="add1" type="text" />

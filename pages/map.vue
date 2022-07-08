@@ -18,6 +18,7 @@ export default {
     },
     methods: {
         initMap() {
+            // 지도
             const container = document.getElementById("map");
             const options = {
                 center: new kakao.maps.LatLng(37.49644445091002, 126.9201342484267),
@@ -29,6 +30,7 @@ export default {
                 '<div class ="label"><span class="left"></span><span class="center"><a href="https://nds.nongshim.co.kr/main.do" target="_blank">농심 도연관</a></span><span class="right"></span></div>';
             const position = new kakao.maps.LatLng(37.49644445091002, 126.9201342484267);
 
+            // custom overlay
             const customOverlay = new kakao.maps.CustomOverlay({
                 position,
                 content,
@@ -36,6 +38,7 @@ export default {
             });
             customOverlay.setMap(map);
 
+            // 마커
             const imageSrc = "../assets/mk.png";
             const imageSize = new kakao.maps.Size(40, 40);
             const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);

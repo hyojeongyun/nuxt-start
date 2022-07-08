@@ -4,6 +4,8 @@ const { data: rivers } = await useAsyncData("rivers", () => $fetch("https://api.
 <template>
     <div>
         <img src="~/assets/logo.svg" />
+
+        <!-- 강 리스트 -->
         <h1>Rivers</h1>
         <ul>
             <li v-for="river in rivers" :key="river.title">

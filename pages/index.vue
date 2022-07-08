@@ -11,6 +11,8 @@ export default {
     <div>
         <img src="~/assets/logo.svg" />
         <h1>Hello! 👋</h1>
+
+        <!-- 산 리스트 -->
         <LazyMountainList v-if="show" />
         <button v-if="!show" @click="show = true">Show List</button>
         <button v-if="show" @click="show = false">Close List</button>

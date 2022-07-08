@@ -4,6 +4,8 @@ const { data: planets } = await useAsyncData("planets", () => $fetch("https://ap
 <template>
     <div>
         <img src="~/assets/logo.svg" />
+
+        <!-- 행성 리스트 -->
         <h1>Planets</h1>
         <ul>
             <li v-for="planet in planets" :key="planet.title">
